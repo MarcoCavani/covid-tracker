@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.js" integrity="sha512-oKHFEN8NtMRzI0+BvFZLCS2uQN9LxvQc69/mGICoWfjbXEoEbYLCCfxdHZSU0yXmcGVftm21KkoSOn7+XYJT3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <title>Covid-Tracking-app</title>
+    </head>
+    <style>
+        th, td{
+
+            width: 200px !important;
+        }
+    </style>
+    <body>
+
+        <ul id="people"></ul>
+
+        <div class="container">
+
+            <div class="raw">
+
+                <h1>World-wide COVID_19 data</h1>
+                <table class="table table-primary table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cases</th>
+                            <th scope="col">Deaths</th>
+                            <th scope="col">Recovered</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="worldWide">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="raw">
+                <h1>Australia COVID_19 data</h1>
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cases</th>
+                            <th scope="col">Deaths</th>
+                            <th scope="col">Recovered</th>
+                            <th scope="col">Flag</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="australia">
+                        
+                    </tbody>
+                </table>
+
+            </div>
+            
+            
+            
+            
+
+           
+           <div class="raw">
+                <h1 id="optional">Select a Country</h1>
+                            
+    <select name="sortByCountry" id="sortByCountry" class="mb-2">
+       
+        
+        <option value="Select Country">Select Country</option>
+        
+    </select>
+                <table class="table table-danger table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cases</th>
+                            <th scope="col">Deaths</th>
+                            <th scope="col">Recovered</th>
+                            <th scope="col">Flag</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="optional">
+                        
+                    </tbody>
+                </table>
+
+            </div>
+            
+            
+            
+        </div>
+        
+        <script src="countUp.min.js"></script>
+        <script src="people.json"></script>
+        <script src="app.js"></script>
+
+    </body>
+</html>
