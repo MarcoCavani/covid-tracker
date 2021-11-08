@@ -91,13 +91,23 @@
 
             </div>
             
-            
+
+            <div id="lastUpdate"></div>
+            <script>
+                const lastUpdate = new Date();
+                const date = document.querySelector('#lastUpdate');
+                date.innerHTML = 'Last Update:' + '<br/>' +' ' + lastUpdate;
+
+            </script>
             
         </div>
         
         <script src="countUp.min.js"></script>
         <script src="people.json"></script>
         <script src="app.js"></script>
+        
+        
 
     </body>
+    
 </html>

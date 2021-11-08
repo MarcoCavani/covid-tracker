@@ -1,9 +1,13 @@
 
+
+
+const apiTheSecond = 'https://webhooks.mongodb-stitch.com/api/client/v2.0/app/covid-19-qppza/service/REST-API/incoming_webhook/metadata';
 //API URL
 const apiURL = 'https://corona.lmao.ninja/v2/countries';
 const apiURLcontinents = "https://corona.lmao.ninja/v2/continents"
 
 //fetch and return data from the API
+
 
 
 const select = document.querySelector("select");
@@ -13,6 +17,8 @@ async function getCases(){
     const apiResponse = await fetch(apiURL);
     const data = await apiResponse.json();
     return data;
+    
+    
 
 }
 
